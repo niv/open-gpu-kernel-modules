@@ -12,6 +12,16 @@ body:
     description: "Which OpenRM driver version are you running? Be as specific as possible: SHA is best when built from specific commit."
   validations:
     required: true
+- type: dropdown
+  id: sw_driver_proprietary
+  attributes:
+    label: "Does this happen with the proprietary driver (of the same version) as well?"
+    options:
+    - "Yes"
+    - "No"
+    - "I cannot test this"
+  validations:
+    required: true
 - type: input
   id: sw_host_os
   attributes:
