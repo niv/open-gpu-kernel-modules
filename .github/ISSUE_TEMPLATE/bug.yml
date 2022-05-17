@@ -33,7 +33,7 @@ body:
     description: "Please provide bullet-pointed reproduction steps, so we can see the issue on our end. Name all required preconditions."
   validations:
     required: true
-- type: textarea
+- type: dropdown
   id: bug_incidence
   attributes:
     label: "Bug Incidence"
