@@ -1,0 +1,35 @@
+name: Report Build Bug 🛠
+description: |
+  Build-related bugs such as with the build system, compiler or OS support.
+  Before filling out, check if your issue has already been reported.
+  Read CONTRIBUTING.md.
+  Thank you!
+body:
+- type: input
+  id: sw_driver_version
+  attributes:
+    label: NVIDIA OpenRM Driver version
+    description: "Which OpenRM driver version are you running? Be as specific as possible: SHA is best when built from specific commit."
+  validations:
+    required: true
+- type: input
+  id: sw_host_os
+  attributes:
+    label: Operating System and Version
+    description: "Which OS are you running this on? For example: Debian 11"
+  validations:
+    required: true
+- type: textarea
+  id: bug_description
+  attributes:
+    label: "Describe the bug"
+    description: "Please write a clear and concise description of what the bug is."
+  validations:
+    required: true
+- type: textarea
+  id: bug_repro
+  attributes:
+    label: "To Reproduce"
+    description: "Please provide bullet-pointed reproduction steps, so we can see the issue on our end. Name all required preconditions."
+  validations:
+    required: true
