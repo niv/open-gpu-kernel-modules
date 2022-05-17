@@ -1,8 +1,9 @@
 name: 🐞 Report Bug 🐞
 description: |
-  Please do not ask open questions, request features, or report confidential security issues here;
-  read on below for all of those!
-  CONTRIBUTING.md is worth a read for the current guidelines.
+  Please do not ask open questions, request features, or report confidential security issues here.
+  Before filling out, check if your issue has already been reported.
+  Read CONTRIBUTING.md.
+  Thank you!
 body:
 - type: input
   id: sw_driver_version
