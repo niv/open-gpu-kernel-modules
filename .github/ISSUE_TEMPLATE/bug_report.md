@@ -1,25 +1,56 @@
----
-name: Bug report
-about: Create a report to help us improve
+name: Report Bug
+about: Please do not ask questions, request features, or report confidential security issues here; read on below for all of those! Also, before submitting a new ticket, check if someone else may already have reported it. CONTRIBUTING.md is worth a read for the current guidelines.
 title: ''
 labels: bug
 assignees: ''
 
----
+body:
+  - type: input
+    id: sw_driver_version
+    attributes:
+      label: NVIDIA OpenRM Driver version
+      description: Which OpenRM driver version are you running?
+    validations:
+      required: true
+      
+  - type: input
+    id: hw_gpu_type
+    attributes:
+      label: Hardware: GPU
+      description: Which GPU is this bug manifesting with (name multiple or N/A if it happens without a GPU too)?
+    validations:
+      required: true
 
-**NVIDIA Driver Version**
-Please write the version of the NVIDIA driver you are using.
+  - type: textarea
+     id: bug_description
+     attributes:
+       label: Describe the bug
+       description: Please write a clear and concise description of what the bug is.
+     validations:
+       required: true
 
-**GPU**
-Please write the particular model of NVIDIA GPU you are using.
+  - type: textarea
+     id: bug_repro
+     attributes:
+       label: To Reproduce
+       description: Please provide bullet-pointed reproduction steps, so we can see the issue on our end.
+     validations:
+       required: true
 
-**Describe the bug**
-Please write a clear and concise description of what the bug is.
+  - type: textarea
+     id: bug_incidence
+     attributes:
+       label: Bug Incidence
+       description: How often does the issue happen?
+       options: [ Once, Sometimes, Often, Always ]
+     validations:
+       required: true
 
-**To Reproduce**
-Please write the steps to reproduce the behavior.
+  - type: textarea
+     id: bug_expected_behaviour
+     attributes:
+       label: Expected behaviour
+       description: If unclear from the above: What did you expect to happen instead?
+     validations:
+       required: false
 
-**Expected behavior**
-Please write a clear and concise description of what you expected to happen.
-
-**Please reproduce the problem, run nvidia-bug-report.sh, and attach the resulting nvidia-bug-report.log.gz.**
