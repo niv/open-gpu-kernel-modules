@@ -8,8 +8,8 @@ body:
 - type: input
   id: sw_driver_version
   attributes:
-    label: NVIDIA OpenRM Driver version
-    description: "Which OpenRM driver version are you running? Be as specific as possible: SHA is best when built from specific commit."
+    label: NVIDIA Open GPU Kernel Modules Version
+    description: "Which open-gpu-kernel-modules version are you running? Be as specific as possible: SHA is best when built from specific commit."
   validations:
     required: true
 - type: dropdown
