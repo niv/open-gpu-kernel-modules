@@ -1,6 +1,6 @@
-name: 🐞 Report Bug 🐞
+name: Report Functional Bug 🐞
 description: |
-  Please do not ask open questions, request features, or report confidential security issues here.
+  Functional bugs affect operation or stability of the driver and/or hardware.
   Before filling out, check if your issue has already been reported.
   Read CONTRIBUTING.md.
   Thank you!
