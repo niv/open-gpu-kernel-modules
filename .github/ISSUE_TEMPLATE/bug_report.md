@@ -57,3 +57,7 @@ body:
      validations:
        required: false
 
+  - type: markdown
+    attributues:
+      value: |
+        **Please reproduce the problem, run nvidia-bug-report.sh, and attach the resulting nvidia-bug-report.log.gz to this issue (you can only do this after submitting this issue form).**
