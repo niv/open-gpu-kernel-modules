@@ -13,6 +13,13 @@ body:
   validations:
     required: true
 - type: input
+  id: sw_host_os
+  attributes:
+    label: Operating System and Version
+    description: "Which OS are you running this on? For example: Debian 11"
+  validations:
+    required: true
+- type: input
   id: hw_gpu_type
   attributes:
     label: "Hardware: GPU"
@@ -24,6 +31,7 @@ body:
   attributes:
     label: "Describe the bug"
     description: "Please write a clear and concise description of what the bug is."
+    placeholder: ""
   validations:
     required: true
 - type: textarea
@@ -31,6 +39,9 @@ body:
   attributes:
     label: "To Reproduce"
     description: "Please provide bullet-pointed reproduction steps, so we can see the issue on our end. Name all required preconditions."
+    placeholder: |
+      * Boot driver version X
+      * Run glxgears
   validations:
     required: true
 - type: dropdown
