@@ -20,37 +20,37 @@ body:
   validations:
     required: true
 - type: textarea
-   id: bug_description
-   attributes:
-     label: "Describe the bug"
-     description: "Please write a clear and concise description of what the bug is."
-   validations:
-     required: true
+  id: bug_description
+  attributes:
+    label: "Describe the bug"
+    description: "Please write a clear and concise description of what the bug is."
+  validations:
+    required: true
 - type: textarea
-   id: bug_repro
-   attributes:
-     label: "To Reproduce"
-     description: "Please provide bullet-pointed reproduction steps, so we can see the issue on our end. Name all required preconditions."
-   validations:
-     required: true
+  id: bug_repro
+  attributes:
+    label: "To Reproduce"
+    description: "Please provide bullet-pointed reproduction steps, so we can see the issue on our end. Name all required preconditions."
+  validations:
+    required: true
 - type: textarea
-   id: bug_incidence
-   attributes:
-     label: "Bug Incidence"
-     description: "How often does the issue happen?"
-     options:
-     - Once
-     - Sometimes
-     - Always
-   validations:
-     required: true
+  id: bug_incidence
+  attributes:
+    label: "Bug Incidence"
+    description: "How often does the issue happen?"
+    options:
+    - Once
+    - Sometimes
+    - Always
+  validations:
+    required: true
 - type: textarea
-   id: bug_expected_behaviour
-   attributes:
-     label: "Expected behaviour"
-     description: "If unclear from the above: What did you expect to happen instead?"
-   validations:
-     required: false
+  id: bug_expected_behaviour
+  attributes:
+    label: "Expected behaviour"
+    description: "If unclear from the above: What did you expect to happen instead?"
+  validations:
+    required: false
 - type: markdown
   attributues:
     value: |
