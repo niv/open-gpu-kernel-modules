@@ -1,8 +1,7 @@
 name: 🐞 Report Bug 🐞
 description: |
   Please do not ask open questions, request features, or report confidential security issues here;
-  read on below for all of those! Also, before submitting a new ticket, check if someone else
-  may already have reported it.
+  read on below for all of those!
   CONTRIBUTING.md is worth a read for the current guidelines.
 body:
 - type: input
