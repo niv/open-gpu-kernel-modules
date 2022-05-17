@@ -1,9 +1,9 @@
+---
 name: Report Bug
 about: Please do not ask questions, request features, or report confidential security issues here; read on below for all of those! Also, before submitting a new ticket, check if someone else may already have reported it. CONTRIBUTING.md is worth a read for the current guidelines.
 title: ''
 labels: bug
 assignees: ''
-
 body:
   - type: input
     id: sw_driver_version
@@ -33,7 +33,7 @@ body:
      id: bug_repro
      attributes:
        label: To Reproduce
-       description: Please provide bullet-pointed reproduction steps, so we can see the issue on our end.
+       description: Please provide bullet-pointed reproduction steps, so we can see the issue on our end. Name all required preconditions.
      validations:
        required: true
 
@@ -42,7 +42,10 @@ body:
      attributes:
        label: Bug Incidence
        description: How often does the issue happen?
-       options: [ Once, Sometimes, Often, Always ]
+       options:
+         - Once
+         - Sometimes
+         - Always
      validations:
        required: true
 
