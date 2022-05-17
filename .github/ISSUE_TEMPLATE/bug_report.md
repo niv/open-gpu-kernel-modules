@@ -1,62 +1,54 @@
-name: Report Bug
+name: 🐞 Report Bug 🐞
 description: Please do not ask questions, request features, or report confidential security issues here; read on below for all of those! Also, before submitting a new ticket, check if someone else may already have reported it. CONTRIBUTING.md is worth a read for the current guidelines.
-title: ''
 labels: bug
-assignees: ''
 body:
-  - type: input
-    id: sw_driver_version
-    attributes:
-      label: NVIDIA OpenRM Driver version
-      description: Which OpenRM driver version are you running?
-    validations:
-      required: true
-      
-  - type: input
-    id: hw_gpu_type
-    attributes:
-      label: Hardware: GPU
-      description: Which GPU is this bug manifesting with (name multiple or N/A if it happens without a GPU too)?
-    validations:
-      required: true
-
-  - type: textarea
-     id: bug_description
-     attributes:
-       label: Describe the bug
-       description: Please write a clear and concise description of what the bug is.
-     validations:
-       required: true
-
-  - type: textarea
-     id: bug_repro
-     attributes:
-       label: To Reproduce
-       description: Please provide bullet-pointed reproduction steps, so we can see the issue on our end. Name all required preconditions.
-     validations:
-       required: true
-
-  - type: textarea
-     id: bug_incidence
-     attributes:
-       label: Bug Incidence
-       description: How often does the issue happen?
-       options:
-         - Once
-         - Sometimes
-         - Always
-     validations:
-       required: true
-
-  - type: textarea
-     id: bug_expected_behaviour
-     attributes:
-       label: Expected behaviour
-       description: If unclear from the above: What did you expect to happen instead?
-     validations:
-       required: false
-
-  - type: markdown
-    attributues:
-      value: |
-        **Please reproduce the problem, run nvidia-bug-report.sh, and attach the resulting nvidia-bug-report.log.gz to this issue (you can only do this after submitting this issue form).**
+- type: input
+  id: sw_driver_version
+  attributes:
+    label: NVIDIA OpenRM Driver version
+    description: Which OpenRM driver version are you running?
+  validations:
+    required: true
+- type: input
+  id: hw_gpu_type
+  attributes:
+    label: Hardware: GPU
+    description: Which GPU is this bug manifesting with (name multiple or N/A if it happens without a GPU too)?
+  validations:
+    required: true
+- type: textarea
+   id: bug_description
+   attributes:
+     label: Describe the bug
+     description: Please write a clear and concise description of what the bug is.
+   validations:
+     required: true
+- type: textarea
+   id: bug_repro
+   attributes:
+     label: To Reproduce
+     description: Please provide bullet-pointed reproduction steps, so we can see the issue on our end. Name all required preconditions.
+   validations:
+     required: true
+- type: textarea
+   id: bug_incidence
+   attributes:
+     label: Bug Incidence
+     description: How often does the issue happen?
+     options:
+     - Once
+     - Sometimes
+     - Always
+   validations:
+     required: true
+- type: textarea
+   id: bug_expected_behaviour
+   attributes:
+     label: Expected behaviour
+     description: If unclear from the above: What did you expect to happen instead?
+   validations:
+     required: false
+- type: markdown
+  attributues:
+    value: |
+      **Please reproduce the problem, run nvidia-bug-report.sh, and attach the resulting nvidia-bug-report.log.gz to this issue (you can only do this after submitting this issue form).**
