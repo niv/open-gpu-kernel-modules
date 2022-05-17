@@ -26,7 +26,14 @@ body:
   id: sw_host_os
   attributes:
     label: Operating System and Version
-    description: "Which OS are you running this on? For example: Debian 11"
+    description: "Which OS are you running this on? (output of `lsb_release -d`)"
+  validations:
+    required: true
+- type: input
+  id: sw_host_kernel
+  attributes:
+    label: Kernel Release
+    description: "Which kernel are you running? (output of `uname -a`)"
   validations:
     required: true
 - type: input
