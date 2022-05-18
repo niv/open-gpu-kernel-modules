@@ -1,10 +1,14 @@
 name: Report Functional Bug 🐛
-description: |
-  Functional bugs affect operation or stability of the driver and/or hardware.
-  Before filling out, check if your issue has already been reported.
-  Read CONTRIBUTING.md.
-  Thank you!
+description: Functional bugs affect operation or stability of the driver and/or hardware.
 body:
+- type: markdown
+  attributes:
+    value: |
+      Before filling out, please check if your issue has already been reported.
+      
+      Read [CONTRIBUTING.md](https://github.com/NVIDIA/open-gpu-kernel-modules/blob/main/CONTRIBUTING.md) fore more info.
+      
+      Thank you!
 - type: input
   id: sw_driver_version
   attributes:
