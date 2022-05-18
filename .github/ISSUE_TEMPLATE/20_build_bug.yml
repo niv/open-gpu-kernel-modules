@@ -1,4 +1,4 @@
-name: Report Build Bug 🛠
+name: Report a build bug 🛠
 description: Bugs related to the build system, compiler or OS support.
 body:
 - type: markdown
