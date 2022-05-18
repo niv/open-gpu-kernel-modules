@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Report Cosmetic Issue
-    url: https://github.com/NVIDIA/open-gpu-kernel-modules/discussions/categories
+    url: https://github.com/NVIDIA/open-gpu-kernel-modules/discussions/categories/general
     about: We are not currently accepting cosmetic-only changes such as whitespace, typos, or simple renames. You can still discuss and collect them on the boards.
   - name: Ask Question
     url: https://github.com/NVIDIA/open-gpu-kernel-modules/discussions/categories/q-a
