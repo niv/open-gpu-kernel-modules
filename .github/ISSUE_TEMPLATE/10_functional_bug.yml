@@ -40,7 +40,7 @@ body:
   id: hw_gpu_type
   attributes:
     label: "Hardware: GPU"
-    description: "Which GPU is this bug manifesting on (Specific, Any, Multiple, N/A)?"
+    description: "Which GPU is this bug manifesting on? (output of `nvidia-smi -L`)"
   validations:
     required: true
 - type: textarea
