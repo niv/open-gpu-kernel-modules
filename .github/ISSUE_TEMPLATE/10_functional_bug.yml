@@ -69,13 +69,6 @@ body:
   validations:
     required: true
 - type: textarea
-  id: bug_expected_behaviour
-  attributes:
-    label: "Expected behaviour"
-    description: "If unclear from the above: What did you expect to happen instead?"
-  validations:
-    required: false
-- type: textarea
   id: bug_report_gz
   attributes:
     label: nvidia-bug-report.log.gz
@@ -85,4 +78,11 @@ body:
     placeholder: You can usually just drag & drop the file into this textbox.
   validations:
     required: true
+- type: textarea
+  id: bug_more_info
+  attributes:
+    label: "More info"
+    description: "If unclear from the above: What else we need to know? What did you expect to happen but did not?"
+  validations:
+    required: false
     
