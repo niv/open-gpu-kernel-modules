@@ -33,7 +33,7 @@ body:
   id: sw_host_kernel
   attributes:
     label: Kernel Release
-    description: "Which kernel are you running? (output of `uname -a`)"
+    description: "Which kernel are you running? (output of `uname -a`, say if you built it yourself)"
   validations:
     required: true
 - type: input
