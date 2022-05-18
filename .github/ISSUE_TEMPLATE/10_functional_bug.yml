@@ -83,6 +83,6 @@ body:
       Please reproduce the problem, after that run `nvidia-bug-report.sh`, and attach the
       resulting nvidia-bug-report.log.gz here.
     placeholder: You can usually just drag & drop the file into this textbox.
-    validations:
-      required: true
+  validations:
+    required: true
     
