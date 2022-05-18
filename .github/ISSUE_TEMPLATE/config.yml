@@ -11,4 +11,4 @@ contact_links:
     about: Bugs that aren't specific to the open source driver in this repository should be reported with the linked forums instead. If you are unsure on what kind of bug you have, feel free to open a thread in Discussions. We're here to help!
   - name: Suggest Feature
     url: https://github.com/NVIDIA/open-gpu-kernel-modules/discussions/categories/ideas
-    about: Please do not open Issues for feature requests; instead, suggest and discuss new features on the Github discussion board. If you have a feature you worked on and want to PR it, please also open a discussion before doing so. There are pinned threads on the Feature discussion board; please read them.
+    about: Please do not open Issues for feature requests; instead, suggest and discuss new features on the Github discussion board. If you have a feature you worked on and want to PR it, please also open a discussion before doing so.
