@@ -23,20 +23,29 @@ body:
   id: sw_host_kernel
   attributes:
     label: Kernel Release
-    description: "Which kernel are you running? (output of `uname -a`)"
+    description: "Which kernel are you running? (output of `uname -a`, say if you built it yourself)."
   validations:
     required: true
 - type: textarea
   id: bug_description
   attributes:
-    label: "Describe the bug"
-    description: "Please write a clear and concise description of what the bug is."
+    label: "Build Command"
+    description: "Please show what command(s) you ran that led to the issue."
   validations:
     required: true
 - type: textarea
-  id: bug_repro
+  id: bug_build_log
   attributes:
-    label: "To Reproduce"
-    description: "Please provide bullet-pointed reproduction steps, so we can see the issue on our end. Name all required preconditions."
+    label: Terminal output/Build Log
+    description: |
+      Please paste the build log here. You can wrap it into pairs of three backticks to blockquote it.
   validations:
     required: true
+- type: textarea
+  id: bug_more_info
+  attributes:
+    label: "More Info"
+    description: "If unclear from the above: What else we need to know? What did you expect to happen but did not?"
+  validations:
+    required: false
+    
