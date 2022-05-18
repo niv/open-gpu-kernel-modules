@@ -1,4 +1,4 @@
-name: Report Functional Bug 🐞
+name: Report Functional Bug 🐛
 description: |
   Functional bugs affect operation or stability of the driver and/or hardware.
   Before filling out, check if your issue has already been reported.
@@ -75,8 +75,14 @@ body:
     description: "If unclear from the above: What did you expect to happen instead?"
   validations:
     required: false
-- type: markdown
+- type: textarea
+  id: bug_report_gz
   attributes:
-    value: |
-      **Please reproduce the problem, run nvidia-bug-report.sh, and attach the resulting nvidia-bug-report.log.gz to this issue (you can only do this after submitting this issue form).**
-
+    label: nvidia-bug-report.log.gz
+    description: |
+      Please reproduce the problem, after that run `nvidia-bug-report.sh`, and attach the
+      resulting nvidia-bug-report.log.gz here.
+    placeholder: You can usually just drag & drop the file into this textbox.
+    validations:
+      required: true
+    
