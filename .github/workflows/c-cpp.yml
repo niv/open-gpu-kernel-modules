@@ -1,0 +1,18 @@
+name: Build x64
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths-ignore:
+    - '**.md'
+    - '.*'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: make
+      run: make modules -j `nproc`
